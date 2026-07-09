@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account - FULL TANK</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">NO EXCUSES, JUST LEVOLS 🫱🏾🫱🏾</div>
+
+  <header class="site-header">
+    <a class="brand-lockup" href="index.html" aria-label="FULL TANK home">
+      <img src="Brand Logo.jpeg" alt="FULL TANK logo">
+      <span>
+        <strong>FULL TANK</strong>
+        <small>Premium streetwear</small>
+      </span>
+    </a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clothes.html">Shop</a></li>
+        <li><a href="lookbook.html">Lookbook</a></li>
+        <li><a href="size-guide.html">Size Guide</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">Cart <span class="cart-count" data-cart-count>0</span></a></li>
+        <li><a href="account.html" aria-current="page">Account</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="account-layout">
+      <div class="account-intro">
+        <p class="eyebrow">FULL TANK account</p>
+        <h1>Sign up or log in</h1>
+        <p>
+          A polished clothing store needs an account area for faster checkout, saved
+          details, order updates, and early drop access.
+        </p>
+        <p class="slogan">NO EXCUSES, JUST LEVOLS 🫱🏾🫱🏾</p>
+      </div>
+
+      <div class="auth-card">
+        <div class="auth-tabs" role="tablist" aria-label="Account forms">
+          <button class="active" data-auth-tab="login" type="button">Log in</button>
+          <button data-auth-tab="signup" type="button">Sign up</button>
+        </div>
+
+        <form class="auth-panel active" data-auth-panel="login">
+          <label>
+            Email address
+            <input type="email" placeholder="you@example.com" required>
+          </label>
+          <label>
+            Password
+            <input type="password" placeholder="Enter your password" required>
+          </label>
+          <button class="btn" type="submit">Log In</button>
+          <p class="auth-status" aria-live="polite"></p>
+        </form>
+
+        <form class="auth-panel" data-auth-panel="signup">
+          <label>
+            Full name
+            <input type="text" placeholder="Your name" required>
+          </label>
+          <label>
+            Email address
+            <input type="email" placeholder="you@example.com" required>
+          </label>
+          <label>
+            Password
+            <input type="password" placeholder="Create a password" required>
+          </label>
+          <button class="btn" type="submit">Create Account</button>
+          <p class="auth-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>FULL TANK</strong>
+      <p>NO EXCUSES, JUST LEVOLS 🫱🏾🫱🏾</p>
+    </div>
+    <nav aria-label="Footer navigation">
+      <a href="clothes.html">Shop</a>
+      <a href="size-guide.html">Size Guide</a>
+      <a href="contact.html">Contact</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

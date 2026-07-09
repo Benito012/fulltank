@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Clothing - FULL TANK</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">NO EXCUSES, JUST LEVOLS 🫱🏾🫱🏾</div>
+
+  <header class="site-header">
+    <a class="brand-lockup" href="index.html" aria-label="FULL TANK home">
+      <img src="Brand Logo.jpeg" alt="FULL TANK logo">
+      <span>
+        <strong>FULL TANK</strong>
+        <small>Premium streetwear</small>
+      </span>
+    </a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clothes.html" aria-current="page">Shop</a></li>
+        <li><a href="lookbook.html">Lookbook</a></li>
+        <li><a href="size-guide.html">Size Guide</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">Cart <span class="cart-count" data-cart-count>0</span></a></li>
+        <li><a href="account.html">Account</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="shop-hero">
+      <p class="eyebrow">Collection</p>
+      <h1>Shop FULL TANK clothing</h1>
+      <p>
+        Browse by category, search products, sort prices, choose a colour, and select
+        Small, Medium, or Large before adding to your bag.
+      </p>
+    </section>
+
+    <section class="section-block">
+      <div class="shop-controls">
+        <label>
+          Search products
+          <input type="search" data-shop-search placeholder="Search hoodies, caps, tracksuits...">
+        </label>
+        <label>
+          Sort
+          <select data-shop-sort>
+            <option value="featured">Featured first</option>
+            <option value="price-low">Price: low to high</option>
+            <option value="price-high">Price: high to low</option>
+            <option value="name">Name A-Z</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="shop-toolbar" aria-label="Product category filters">
+        <button class="filter-btn active" data-filter="all" type="button">All</button>
+        <button class="filter-btn" data-filter="tracksuits" type="button">Tracksuits</button>
+        <button class="filter-btn" data-filter="hoodies" type="button">Hoodies</button>
+        <button class="filter-btn" data-filter="t-shirts" type="button">T-Shirts</button>
+        <button class="filter-btn" data-filter="caps" type="button">Caps</button>
+        <button class="filter-btn" data-filter="barnie" type="button">Barnie</button>
+      </div>
+
+      <div class="product-grid" data-product-grid="all"></div>
+    </section>
+
+    <section class="info-grid">
+      <article>
+        <h2>Need the right fit?</h2>
+        <p>Use the size guide before checkout so your selected Small, Medium, or Large is clear.</p>
+        <a class="text-link" href="size-guide.html">Open size guide</a>
+      </article>
+      <article>
+        <h2>Delivery and returns</h2>
+        <p>Demo policy: free delivery from R600, standard delivery below that, and exchange support for unworn items.</p>
+        <a class="text-link" href="contact.html">Ask a question</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>FULL TANK</strong>
+      <p>NO EXCUSES, JUST LEVOLS 🫱🏾🫱🏾</p>
+    </div>
+    <nav aria-label="Footer navigation">
+      <a href="clothes.html">Shop</a>
+      <a href="size-guide.html">Size Guide</a>
+      <a href="contact.html">Contact</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

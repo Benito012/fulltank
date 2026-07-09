@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - FULL TANK</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">NO EXCUSES, JUST LEVOLS 🫱🏾🫱🏾</div>
+
+  <header class="site-header">
+    <a class="brand-lockup" href="index.html" aria-label="FULL TANK home">
+      <img src="Brand Logo.jpeg" alt="FULL TANK logo">
+      <span>
+        <strong>FULL TANK</strong>
+        <small>Premium streetwear</small>
+      </span>
+    </a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clothes.html">Shop</a></li>
+        <li><a href="lookbook.html">Lookbook</a></li>
+        <li><a href="size-guide.html">Size Guide</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">Cart <span class="cart-count" data-cart-count>0</span></a></li>
+        <li><a href="account.html">Account</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <p class="eyebrow">Secure demo checkout</p>
+      <h1>Payment</h1>
+      <p>
+        This page is styled like a real checkout with customer details, delivery notes,
+        Stripe card payment, and Ozow instant EFT demo options.
+      </p>
+    </section>
+
+    <section class="checkout-layout">
+      <form id="checkout-form" class="checkout-form">
+        <div class="form-section">
+          <h2>Contact and delivery</h2>
+          <div class="form-grid">
+            <label>
+              Full name
+              <input id="name" type="text" placeholder="Full Tank Customer" required>
+            </label>
+            <label>
+              Email address
+              <input id="email" type="email" placeholder="customer@example.com" required>
+            </label>
+            <label>
+              Phone number
+              <input id="phone" type="tel" placeholder="073 811 3568" required>
+            </label>
+            <label>
+              City
+              <input id="city" type="text" placeholder="Johannesburg" required>
+            </label>
+            <label class="full-span">
+              Delivery address
+              <textarea id="address" placeholder="Street address, suburb, province, postal code" required></textarea>
+            </label>
+            <label class="full-span">
+              Order notes
+              <textarea id="notes" placeholder="Optional: delivery instructions or size questions"></textarea>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h2>Payment method</h2>
+          <div class="payment-tabs">
+            <label class="payment-card">
+              <input type="radio" name="payment-method" value="Stripe" checked>
+              <span>
+                <strong>Stripe</strong>
+                <small>Demo card checkout</small>
+              </span>
+            </label>
+            <label class="payment-card">
+              <input type="radio" name="payment-method" value="Ozow">
+              <span>
+                <strong>Ozow</strong>
+                <small>Demo instant EFT</small>
+              </span>
+            </label>
+          </div>
+
+          <div class="gateway-panel" data-gateway-panel="Stripe">
+            <div class="form-grid">
+              <label class="full-span">
+                Card number
+                <input inputmode="numeric" placeholder="4242 4242 4242 4242" required>
+              </label>
+              <label>
+                Expiry
+                <input placeholder="12 / 30" required>
+              </label>
+              <label>
+                CVC
+                <input inputmode="numeric" placeholder="123" required>
+              </label>
+            </div>
+          </div>
+
+          <div class="gateway-panel hidden" data-gateway-panel="Ozow">
+            <div class="form-grid">
+              <label class="full-span">
+                Bank
+                <select>
+                  <option>Absa</option>
+                  <option>Capitec</option>
+                  <option>FNB</option>
+                  <option>Nedbank</option>
+                  <option>Standard Bank</option>
+                </select>
+              </label>
+              <label class="full-span">
+                Ozow reference
+                <input value="FULLTANK-DEMO" readonly>
+              </label>
+            </div>
+          </div>
+
+          <button class="btn" type="submit">Complete Demo Payment</button>
+          <p class="secure-note">Demo only: live Stripe/Ozow payments need a backend gateway setup.</p>
+          <p id="payment-status" aria-live="polite"></p>
+        </div>
+      </form>
+
+      <aside class="summary-panel" aria-label="Checkout summary">
+        <h2>Order summary</h2>
+        <div id="checkout-items"></div>
+        <dl>
+          <div>
+            <dt>Subtotal</dt>
+            <dd>R<span id="checkout-subtotal">0.00</span></dd>
+          </div>
+          <div>
+            <dt>Delivery</dt>
+            <dd>R<span id="checkout-delivery">0.00</span></dd>
+          </div>
+          <div class="summary-total">
+            <dt>Total</dt>
+            <dd>R<span id="checkout-total">0.00</span></dd>
+          </div>
+        </dl>
+        <p class="summary-note">NO EXCUSES, JUST LEVOLS 🫱🏾🫱🏾</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>FULL TANK</strong>
+      <p>NO EXCUSES, JUST LEVOLS 🫱🏾🫱🏾</p>
+    </div>
+    <nav aria-label="Footer navigation">
+      <a href="clothes.html">Shop</a>
+      <a href="size-guide.html">Size Guide</a>
+      <a href="contact.html">Contact</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
